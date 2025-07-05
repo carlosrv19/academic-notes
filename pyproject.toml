@@ -1,7 +1,7 @@
 [project]
-name = "acedemic-notes"
+name = "academic-notes"
 version = "0.1.0"
-description = "Add your description here"
+description = "Notes on statistics across different classes at Penn State"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = []
