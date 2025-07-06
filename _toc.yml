@@ -5,4 +5,6 @@ format: jb-book
 root: introduction
 chapters:
 - file: stats-500/introduction
+  sections:
+  - file: stats-500/chapter01/chapter01
 
