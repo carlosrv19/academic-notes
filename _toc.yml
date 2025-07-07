@@ -3,8 +3,10 @@
 
 format: jb-book
 root: introduction
-chapters:
-- file: stats-500/introduction
-  sections:
-  - file: stats-500/chapter01/chapter01
+parts:
+  - caption: STATS 500 Applied Statistics
+    chapters:
+    - file: stats-500/introduction
+      sections:
+      - file: stats-500/chapter01/chapter01
 
