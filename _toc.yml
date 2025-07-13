@@ -9,7 +9,6 @@ parts:
     - file: stats-500/introduction
       sections:
       - file: stats-500/chapter01/chapter01
-
   - caption: Bibliography
     chapters:
       - file: bibliography/bibliography
