@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Chapter 2: Using Surveys Studies to Gather Data &#8212; Applied Statistics - Notes</title>
+    <title>Chapter 2: Using surveys studies to gather data &#8212; Applied Statistics - Notes</title>
   
   
   
@@ -57,6 +57,8 @@
     <script async="async" src="../../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'stats-500/chapter02/chapter02';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
@@ -183,7 +185,7 @@
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="../introduction.html">STATS 500: Applied Statistics</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../chapter01/chapter01.html">Chapter 1: Statistics and the Scientific Method</a></li>
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">Chapter 2: Using Surveys Studies to Gather Data</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Chapter 2: Using surveys studies to gather data</a></li>
 </ul>
 </details></li>
 </ul>
@@ -375,7 +377,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Chapter 2: Using Surveys Studies to Gather Data</h1>
+    <h1>Chapter 2: Using surveys studies to gather data</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -385,7 +387,7 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#observational-studies">Observational Studies</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#observational-studies">Observational studies</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#key-terminology">Key terminology</a></li>
 </ul>
 </li>
@@ -405,14 +407,14 @@ document.write(`
                 <article class="bd-article">
                   
   <section id="chapter-2-using-surveys-studies-to-gather-data">
-<span id="stats-500-chapter02"></span><h1>Chapter 2: Using Surveys Studies to Gather Data<a class="headerlink" href="#chapter-2-using-surveys-studies-to-gather-data" title="Link to this heading">#</a></h1>
+<span id="stats-500-chapter02"></span><h1>Chapter 2: Using surveys studies to gather data<a class="headerlink" href="#chapter-2-using-surveys-studies-to-gather-data" title="Link to this heading">#</a></h1>
 <p>In this chapter we deep dive in some types of research study. They can be <strong>observational</strong> or <strong>experimental</strong> studies.</p>
 <ul class="simple">
 <li><p>In <strong>observational studies</strong> the researcher is limited only to record information from subjects (or units). No intervention or manipulation of the process involved in the data generation.</p></li>
 <li><p>In contrast, in <strong>experimental studies</strong> the researcher purposely manipulates some variables associated with the study. Often, this manipulation is the result of randomly assigning a predefined <em>treatment</em> to the experimental unit. For example, in a clinical trial, the researcher randomly assigns a patient to one of many treatments. In this case, the variable being manipulated is “treatment” that takes values (levels) <code class="docutils literal notranslate"><span class="pre">treatment_A</span></code>, <code class="docutils literal notranslate"><span class="pre">treatment_B</span></code>, etc. Experimental studies are executed with maximum control so that if a difference is found between different groups, that difference is attributed only to the fact that groups have different treatments. For that reason, in experimental studies, one group is very similar in characteristics to other group(s), <em>except</em> in that they have been given a different treatment. One common experimental design is the so called <em>completely randomized experiment</em>, where (ideally) a random sample is taken from a population of interest, then a random assignment to a given treatment is done.</p></li>
 </ul>
 <section id="observational-studies">
-<h2>Observational Studies<a class="headerlink" href="#observational-studies" title="Link to this heading">#</a></h2>
+<h2>Observational studies<a class="headerlink" href="#observational-studies" title="Link to this heading">#</a></h2>
 <section id="key-terminology">
 <h3>Key terminology<a class="headerlink" href="#key-terminology" title="Link to this heading">#</a></h3>
 <ul class="simple">
@@ -439,6 +441,11 @@ document.write(`
 <h3>Key definitions<a class="headerlink" href="#key-definitions" title="Link to this heading">#</a></h3>
 <ul class="simple">
 <li><p><strong>Target population:</strong> The complete set of subjects or objects of interest, from which we want to learn the key aspects of the research question.</p></li>
+<li><p><strong>Sample:</strong> A subset of the <em>Target population</em>.</p></li>
+<li><p><strong>Sampled population:</strong> Corresponds with the collection of subjects or objects from the Target population that are susceptible to be sampled. Ideally, the sampled population is the same as the target population, however, given the complexity of the population or the mechanism to sample objects, it is sometimes impossible that some objects or subjects can actually be sampled. For instance, in a production chain, we may be targeting a finished good produced by a certain machine. The population, “finished goods produced by X machine” has elements that clearly are not even produced today. Finished goods to be produced in a future production cycle, though part of the population, have not potential to be observed at the moment of the sampling procedure.</p></li>
+<li><p><strong>Observation unit:</strong> corresponds with the object or subject from which data is collected or observed.</p></li>
+<li><p><strong>Sampling unit:</strong> Can be thought of as the physical “container” or entity which is actually selected, and from which observation units are considered.</p></li>
+<li><p><strong>Simple random sample:</strong> Is a sample of a predefined size, say <span class="math notranslate nohighlight">\(n,\)</span> that has been selected from a random process such that any sample of size <span class="math notranslate nohighlight">\(n\)</span> had the same chance of having been selected.</p></li>
 </ul>
 </section>
 </section>
@@ -508,7 +515,7 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#observational-studies">Observational Studies</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#observational-studies">Observational studies</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#key-terminology">Key terminology</a></li>
 </ul>
 </li>
